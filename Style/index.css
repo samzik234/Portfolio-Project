@@ -1,0 +1,137 @@
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-position: center; 
+  }
+  
+  /* Set body font and background color */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #8b8383; /* Changed background color */
+    padding: 20px; /* Add some padding for better readability */
+  }
+  
+  /* Style headings */
+  h1, .h1 {
+    color: #eed9d9; /* Adjusted color */
+    font-size: 28px; /* Adjusted font size */
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #e0e7ee;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  h3, .h3 {
+    color: #f8f1f1;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Style links */
+  a {
+    color: #e0e7ee;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:#e0e7ee;
+  }
+  
+  /* Style lists */
+  ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  
+  /* Style list items */
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Add some spacing between list items */
+  ul > li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for divs */
+  .divone, .divtwo, .divthree, .divfour, .divfive, .divsix {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-left: 240px;
+    padding: 20px;
+    background-color: #b6a9a9;
+    border-radius: 8px;
+    box-shadow: 2px 4px rgba(333, 314, 319, 0.1);
+  }
+  
+  /* Footer styles */
+  .footer1 {
+    background-color: gray;
+  }
+  
+  /* Header styles */
+  header {
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #aa2a2a;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #e6cfcf;
+  }
+  
+  .right-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-links a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: #ebe5e5;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 20px;
+    margin-left: 434px; /* Adjusted margin */
+    background-image: url(./images/simon.jpg);
+  }
+  
