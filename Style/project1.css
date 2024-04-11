@@ -47,8 +47,8 @@ body {
   }
   
   a:hover {
-    text-decoration: underline;
-    color: #e0e7ee;
+    text-decoration: none;
+    color: #01070e;
   }
   
   /* Style lists */
@@ -85,13 +85,17 @@ body {
   
   /* Header styles */
   header {
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
+    justify-content:flex-end;
     align-items: center;
     padding: 20px;
-    background-color: #aa2a2a;
+    /* background-color: #aa2a2a; */
+    cursor: pointer;
+    border-radius: 3px;
   }
+  
   
   .logo {
     font-size: 24px;

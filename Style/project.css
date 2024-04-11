@@ -27,9 +27,9 @@ h1, .h1 {
 h2 {
   color: #e0e7ee;
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
+  /* margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center; */
 }
 
 h3, .h3 {
@@ -42,19 +42,20 @@ h3, .h3 {
 
 /* Style links */
 a {
-  color: #e0e7ee;
+  color: #020305;
   text-decoration: none;
+  font-size: 14px;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #e0e7ee;
+  text-decoration:none;
+  color: #050b12;
 }
 
 /* Style lists */
 ul {
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Style list items */
@@ -76,6 +77,19 @@ ul > li:not(:last-child) {
   background-color: #b6a9a9;
   border-radius: 8px;
   box-shadow: 2px 4px rgba(333, 314, 319, 0.1);
+  
+@keyframes move {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 0px; /* Move to the right */
+  }
+  100% {
+    left: 300px; /* Return to center */
+  }
+}
+
 }
 
 /* Footer styles */
@@ -85,12 +99,15 @@ ul > li:not(:last-child) {
 
 /* Header styles */
 header {
-  font-size: 10px;
+  font-size: 14px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
+  justify-content:flex-end;
   align-items: center;
   padding: 20px;
-  background-color: #aa2a2a;
+  /* background-color: #aa2a2a; */
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .logo {
@@ -133,4 +150,14 @@ nav ul li a {
   margin: 20px;
   margin-left: 434px; /* Adjusted margin */
   background-image: url(./images/simon.jpg);
+}
+
+@function randomNum($min, $max)
+.header1{
+   {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+  
+    @return $randomNum;
+  }
 }
