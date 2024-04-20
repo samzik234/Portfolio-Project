@@ -9,9 +9,11 @@ body {
   
   /* Set body font and background color */
   body {
-    font-family: Arial, sans-serif;
-    background-color: #8b8383; /* Changed background color */
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #8f7373; /* Changed background color */
     padding: 20px; /* Add some padding for better readability */
+    background-image: url(./../Images/imagebackground.jpg);
+    background-size: 1300px;
   }
   
   /* Style headings */
@@ -19,7 +21,7 @@ body {
     color: #eed9d9; /* Adjusted color */
     font-size: 28px; /* Adjusted font size */
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -66,40 +68,19 @@ body {
   ul > li:not(:last-child) {
     margin-bottom: 10px;
   }
-  
-  /* Styles for divs */
-  .divone, .divtwo, .divthree, .divfour, .divfive, .divsix {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-left: 240px;
-    padding: 20px;
-    background-color: #b6a9a9;
-    border-radius: 8px;
-    box-shadow: 2px 4px rgba(333, 314, 319, 0.1);
-  }
-  
-  /* Footer styles */
-  .footer1 {
-    background-color: gray;
-  }
-  
+
   /* Header styles */
   header {
     font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
-    /* background-color: #aa2a2a; */
     cursor: pointer;
     border-radius: 3px;
   }
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
   
   nav ul {
     list-style-type: none;
@@ -116,25 +97,17 @@ body {
     text-decoration: none;
     color: #e6cfcf;
   }
-  
-  .right-links {
-    display: flex;
-    align-items: center;
+  .animation{
+    position: relative;
+    animation: move 5s forwards;
+    border-radius:4px;
   }
+  @keyframes move {
+    0% {
+      left: 0px;  
+    }
   
-  .right-links a {
-    margin-left: 12px;
-    text-decoration: none;
-    color: #ebe5e5;
+    100% {
+      left: 39px; /* Return to center */
+    }
   }
-  
-  .circle {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 20px;
-    margin-left: 434px; /* Adjusted margin */
-    background-image: url(./images/simon.jpg);
-  }
-  

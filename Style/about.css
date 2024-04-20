@@ -2,39 +2,48 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("../Images/mybackground.jpg") center/contain no-repeat;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #8b8383;
-  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background-position: center; 
+  background-image: url(./../Images/imagebackground.jpg); 
   background-size: 1300px;
-  background-blend-mode:darken;
-}
+  font-size: 23px;
 
+   }
 /* Style headings */
-h1, .animation {
-  color: #eed9d9;
+h3, .animation {
+  color: #eeebeb;
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
+  font-family: 'Times New Roman', Times, serif;
+  
 }
 
+/* Header styles */
+header {
+  font-size:15px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  border-radius: 3px;
+}
 /* Animation code */
 .animation {
-  width: 200px;
-  height: 50px;
-  background: rgb(28, 53, 60);
   position: relative;
   animation: move 5s forwards;
-  border-radius: 24px;
+  
 }
-
 @keyframes move {
-  100% {
-    left: 390px;
-  }
   0% {
-    left: 0%;
+    left: 0px;  
+  }
+
+  100% {
+    left: 39px; /* Return to center */
   }
 }
 
@@ -45,7 +54,10 @@ a {
 }
 
 a:hover {
-  color: #100606;
+  color: rgb(176, 188, 191);
+}
+ a:active{
+  color: rgb(6, 18, 21);
 }
 
 /* Style lists */
@@ -64,16 +76,7 @@ ul > li:not(:last-child) {
   margin-bottom: 10px;
 }
 
-/* Header styles */
-header {
-  font-size:15px;
-  font-family: 'Times New Roman', Times, serif;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 20px;
-  border-radius: 3px;
-}
+
 
 nav ul {
   list-style-type: none;
@@ -90,37 +93,43 @@ nav ul li a {
   text-decoration: none;
   color: #e6cfcf;
 }
+
 .div2 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 33%;
+  left: 50%; 
+  right: 60%;
   transform: translate(-50%, -30%);
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Arrange items vertically */
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 4%;
-  width: 450px;
-  height: 120px;
+  padding:3%;
+  width: 350px;
+  height: 87px;
   border-radius: 12px;
   background-color: #010a0c;
   color: #f6f3f3;
   font-size: 12px;
   font-family: 'Times New Roman', Times, serif;
-  
 }
-   
-.button {
-  background-color: #bac8d6;
-  width: 5110px;
-  height: 305px;
-  border-radius: 6px;
-  background-color:rgb(28, 53, 60);;
-  font-style: unset;
-  font-size:16px;
-  font-family: 'Times New Roman', Times, serif;
-  color: #e0e3ed;
-  text-align: center;
-  line-height: 40px; /* Center text vertically */
-  text-decoration:wavy; /* Remove default underline */
+
+.btn {
+  margin-top: 0px; /* Add some space between div content and button */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0f56a2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 3s;
+}
+
+.btn:hover {
+  background-color: #e8edf3;
+}
+
+.btn :active{
+  bottom: 84 ;
 }
