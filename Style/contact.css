@@ -1,113 +1,176 @@
-/* Reset default margin and padding */
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #ffffff;
+    background: url(./../Images/imagebackground.jpg) center/cover;
+    align-items: center;
+    background-position: center;
     align-items: center;
     justify-content: center;
-    background-position: center; 
-  }
-  
-  /* Set body font and background color */
-  body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #8f7373; /* Changed background color */
-    padding: 20px; /* Add some padding for better readability */
-    background-image: url(./../Images/imagebackground.jpg);
-    background-size: 1300px;
-  }
-  
-  /* Style headings */
-  h1, .h1 {
-    color: #eed9d9; /* Adjusted color */
-    font-size: 28px; /* Adjusted font size */
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  h2 {
-    color: #e0e7ee;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  h3, .h3 {
-    color: #f8f1f1;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  /* Style links */
-  a {
-    color: #e0e7ee;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: #04080d;
-  }
-  
-  /* Style lists */
-  ul {
-    list-style-type: none;
-    margin-bottom: 20px;
-  }
-  
-  /* Style list items */
-  li {
-    margin-bottom: 10px;
-  }
-  
-  /* Add some spacing between list items */
-  ul > li:not(:last-child) {
-    margin-bottom: 10px;
-  }
+    opacity: 0.8; /* Adjust the opacity value (0.8) for transparency */
+}
 
-  /* Header styles */
-  header {
-    font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-    cursor: pointer;
-    border-radius: 3px;
-  }
-  
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
+a {
     text-decoration: none;
-    color: #e6cfcf;
-  }
-  .animation{
-    position: relative;
-    animation: move 5s forwards;
-    border-radius:4px;
-  }
-  @keyframes move {
-    0% {
-      left: 0px;  
-    }
+    color: #ffffff;
+}
+
+a:hover {
+    color: #b0bcbf;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+.button {
+    font-size: 18px;
+    width: 160px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: darkblue;
+}
+
+.button:active {
+    background-color: darkblue;
+}
+
+header {
+    margin: 10px;
+    display: flex;
+    justify-content:center;
+    font-size: 15px;
+    align-items: center;
+    padding: 13px;
+}
+
+.header4{
   
-    100% {
-      left: 39px; /* Return to center */
+    font-size: 13px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.animation {
+  font-weight: 80;
+    width: 400px;
+    padding: 13px;
+    background-color: rgb(6, 23, 23);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto; /* Center the animation */
+    animation: fadeIn cubic-bezier(0.86, 0, 0.07, 1) ease forwards;
+    background-size: 950px;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-  }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes example {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 0.5em;
+}
+
+footer {
+    color: #fff;
+    padding: 18px 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Display form elements vertically */
+  align-items: center; /* Center align form elements horizontally */
+  margin: 20px; /* Add margin to move the form down */
+}
+
+
+
+/* 
+
+.contact-form form .c {
+  flex-basis: 48%; /* Each form element takes almost half width */
+
+.contact-form form label {
+  margin-bottom: 5px; /* Add margin below labels for spacing */
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+  width: 100%; /* Set width of input fields to 100% */
+  margin-bottom: 10px; /* Add margin between each field */
+  padding: 9px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Add border for visual separation */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.contact-form form textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form form input[type="submit"] {
+  width: 40%; /* Set width of submit button to 100% */
+  margin-top: 10px; /* Add margin above the button */
+  padding: 10px; /* Add padding for spacing */
+  border: 12px; /* Remove border */
+  background-color: rgb(42, 42, 191); 
+  opacity: 0.8;
+  color: white; /* Customize text color */
+  border-radius: 7px; /* Add border radius for rounded corners */
+  cursor: pointer;
+  margin-left:100px;
+  margin-right:200px;
+
+}
+
+.contact-form form input[type="submit"]:hover {
+  background-color: darkblue; /* Change background color on hover */
+}
